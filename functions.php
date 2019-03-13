@@ -17,5 +17,5 @@ function tag_widget_limit($args){
     return $args;
 }
 
-add_filter('amazon_affiliate_id', create_function('', 'return "dpb0e-20";'));
+add_filter('amazon_affiliate_id', function() { return "dpb0e-20"; });
 ?>
