@@ -17,5 +17,12 @@ function tag_widget_limit($args){
     return $args;
 }
 
+add_filter( 'get_image_tag_class', 'mf2_u_photo_add_img_class' );
+
+function mf2_u_photo_add_img_class( $class ) {
+    return 'u-photo' . $class;
+}
+
+
 add_filter('amazon_affiliate_id', function() { return "dpb0e-20"; });
 ?>
